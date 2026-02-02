@@ -53,12 +53,6 @@
   ],
   "posts": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "Introducción a las API",
-      "body": "Conceptos básicos sobre APIs y su importancia."
-    },
-    {
       "id": 2,
       "userId": 2,
       "title": "HTTP y la web",
@@ -119,12 +113,6 @@
       "id": 11
     },
     {
-      "userId": 11,
-      "title": "Nueva publicación con POST",
-      "body": "Esta publicación fue creada usando el método POST en la API.",
-      "id": 12
-    },
-    {
       "userId": 1,
       "title": "Nueva publicación con POST",
       "body": "UNA NUEVA TAREA SE HA AGREGADO A LA LISTA DE TAREAS.",
@@ -132,18 +120,6 @@
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "name": "Comentario 1",
-      "body": "Muy clara la explicación."
-    },
-    {
-      "id": 2,
-      "postId": 1,
-      "name": "Comentario 2",
-      "body": "Buen contenido introductorio."
-    },
     {
       "id": 3,
       "postId": 2,
@@ -191,18 +167,6 @@
       "postId": 9,
       "name": "Comentario 10",
       "body": "Los códigos HTTP son importantes."
-    },
-    {
-      "postId": 1,
-      "name": "Nuevo comentario",
-      "body": "Este comentario fue creado usando el método POST en la API.",
-      "id": 11
-    },
-    {
-      "postId": 1,
-      "name": "Nuevo comentario",
-      "body": "Este comentario fue creado usando el método POST en la API.",
-      "id": 12
     },
     {
       "postId": 12,
