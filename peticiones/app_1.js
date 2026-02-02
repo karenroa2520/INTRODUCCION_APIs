@@ -2,7 +2,7 @@
 
 // Solicitud 1: Realice una solicitud GETpara obtener la lista completa de usuarios disponibles en el servicio.
 const obtenerUsuarios = async () => {
-    let respuesta = await fetch('http://localhost:3000/users');
+    let respuesta = await fetch('http://localhost:3000/users'); //se utiliza la direccion local sin modicaciones
     let datos = await respuesta.json();
     return datos;
 };
