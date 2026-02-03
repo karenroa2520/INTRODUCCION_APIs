@@ -117,6 +117,12 @@
       "title": "Nueva publicación con POST",
       "body": "UNA NUEVA TAREA SE HA AGREGADO A LA LISTA DE TAREAS.",
       "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "Nueva publicación con POST",
+      "body": "UNA NUEVA TAREA SE HA AGREGADO A LA LISTA DE TAREAS.",
+      "id": 14
     }
   ],
   "comments": [
@@ -167,12 +173,6 @@
       "postId": 9,
       "name": "Comentario 10",
       "body": "Los códigos HTTP son importantes."
-    },
-    {
-      "postId": 12,
-      "name": "Nuevo comentario",
-      "body": "UNA SEGUNDA NUEVA TAREA SE HA AGREGADO A LA LISTA DE TAREAS.",
-      "id": 13
     }
   ]
 }

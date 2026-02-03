@@ -1,11 +1,6 @@
-//Parte 2: Creación de información (POST)
-//• Solicitud 4: Realice una solicitud POST para crear una nueva publicación asociada a un usuario existente.
-//Incluya información como título y contenido.
-//• Solicitud 5: Realice una solicitud POST para registrar un nuevo comentario relacionado con una publicación.
+// Parte 2: Creación de información (POST)
 
-// script-post.js
-
-// Solicitud 4: Crear una nueva publicación
+// Solicitud 4: Realice una solicitud POST para crear una nueva publicación asociada a un usuario existente.
 const crearPublicacion = async () => {
     let nuevaPublicacion = {
         userId: 1,
@@ -22,10 +17,11 @@ const crearPublicacion = async () => {
     });
     
     let datos = await respuesta.json();
-    return datos;
+    console.log('=== SOLICITUD 4: Crear nueva publicación ===');
+    console.log(datos);
 };
 
-// Solicitud 5: Crear un nuevo comentario
+// Solicitud 5: Realice una solicitud POST para registrar un nuevo comentario relacionado con una publicación.
 const crearComentario = async () => {
     let nuevoComentario = {
         postId: 12,
@@ -42,20 +38,14 @@ const crearComentario = async () => {
     });
     
     let datos = await respuesta.json();
-    return datos;
+    console.log('=== SOLICITUD 5: Crear nuevo comentario ===');
+    console.log(datos);
 };
 
 // Ejecutar las solicitudes
 const ejecutarSolicitudes = async () => {
-    
-    console.log('=== SOLICITUD 4: Crear nueva publicación ===');
-    let publicacion = await crearPublicacion();
-    console.log(publicacion);
-    console.log('\n');
-    
-    console.log('=== SOLICITUD 5: Crear nuevo comentario ===');
-    let comentario = await crearComentario();
-    console.log(comentario);
+    await crearPublicacion();
+    await crearComentario();
 };
 
 ejecutarSolicitudes();

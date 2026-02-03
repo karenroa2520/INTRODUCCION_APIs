@@ -1,5 +1,3 @@
-// script-put-patch.js
-
 // Solicitud 6: Actualizar completamente una publicación (PUT)
 const actualizarPublicacionPUT = async () => {
     let publicacionActualizada = {
@@ -18,7 +16,8 @@ const actualizarPublicacionPUT = async () => {
     });
     
     let datos = await respuesta.json();
-    return datos;
+    console.log('=== SOLICITUD 6: Actualizar publicación con PUT ===');
+    console.log(datos);
 };
 
 // Solicitud 7: Modificar un campo específico (PATCH)
@@ -36,20 +35,14 @@ const actualizarPublicacionPATCH = async () => {
     });
     
     let datos = await respuesta.json();
-    return datos;
+    console.log('=== SOLICITUD 7: Actualizar campo específico con PATCH ===');
+    console.log(datos);
 };
 
 // Ejecutar las solicitudes
 const ejecutarSolicitudes = async () => {
-    
-    console.log('=== SOLICITUD 6: Actualizar publicación con PUT ===');
-    let resultadoPUT = await actualizarPublicacionPUT();
-    console.log(resultadoPUT);
-    console.log('\n');
-    
-    console.log('=== SOLICITUD 7: Actualizar campo específico con PATCH ===');
-    let resultadoPATCH = await actualizarPublicacionPATCH();
-    console.log(resultadoPATCH);
+    await actualizarPublicacionPUT();
+    await actualizarPublicacionPATCH();
 };
 
 ejecutarSolicitudes();
